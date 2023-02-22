@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <button id="new-game" onclick="reset()">START NEW GAME</button>
+        <div class="sub-container">
+            <div class="Cards">
+                <h3 class="headings">HOME</h3>
+                <div class="score">
+                    <p>Score</p>
+                    <p id="Home-Score">0</p>
+                </div>
+                <div class="btn-container">
+                    <button onclick="homeAddOne()" class="btn">+1</button>
+                    <button onclick="homeAddTwo()" class="btn">+2</button>
+                    <button onclick="homeAddThree()" class="btn">+3</button>
+                </div>
+                <br>
+                <div class="score">
+                    <p>Fouls</p>
+                    <p id="Home-Fouls">0</p>
+                </div>
+                <div class="btn-container">
+                    <button onclick="homeFoulOne()" class="btn">+1</button>
+                </div>
+
+            </div>
+            <div class="Cards">
+                <h3 class="headings">GUEST</h3>
+
+                <div class="score">
+                    <p>Score</p>
+                    <p id="Guest-Score">0</p>
+                </div>
+                <div class="btn-container">
+                    <button onclick="guestAddOne()" class="btn">+1</button>
+                    <button onclick="guestAddTwo()" class="btn">+2</button>
+                    <button onclick="guestAddThree()" class="btn">+3</button>
+                </div>
+                <br>
+                <div class="score">
+                    <p>Fouls</p>
+                    <p id="Guest-Fouls">0</p>
+                </div>
+                <div class="btn-container">
+                    <button onclick="guestFoulOne()" class="btn">+1</button>
+                </div>
+            </div>
+        </div>
+        <p id="lead">Start the game to see the lead</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
